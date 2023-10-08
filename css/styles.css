@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Introduction{
+    font-size: 60px;
+}
+.contenido-textos{
+    font-size: 25px;
+}
+/*creadores*/
+.creadores{
+    background-color: #75d1ff;
+}
+.creadores__container{
+    display: grid;
+    grid-template-columns: 55px 1fr 55px;
+    gap: 1em;
+    align-items: center;
+}
+.creadores__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+.creadores__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.creadores__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+.creadores__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+.creadores__text{
+    max-width: 700px;
+}
+.creadores__course{
+    /*background-color: aquamarine;*/
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+.creadores__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+/*header*/
+.txt-header{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.txt-header h1{
+    font-size: 150px;
+    color: white;
+}
+.txt-header h2{
+    font-size: 70px;
+    font-weight: 300;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 600px;
+    background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #acb6e584, #74ebd580);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #acb6e582, #74ebd580), url(../img/ocean.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
